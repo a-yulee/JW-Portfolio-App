@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Arial.ttf">
+            <string>ArialMT</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="JW_Portfolio" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="JW Icon" translatesAutoresizingMaskIntoConstraints="NO" id="spi-2z-azT">
+                                <rect key="frame" x="0.0" y="221" width="414" height="414"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="spi-2z-azT" secondAttribute="height" multiplier="1:1" id="DCj-DJ-W1i"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hed-iC-bsI">
+                                <rect key="frame" x="121.66666666666669" y="623.66666666666663" width="171" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="hed-iC-bsI" secondAttribute="height" multiplier="61:15" id="hhA-XU-sb4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Tap to continue"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.25" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z1m-z6-wDI">
+                                <rect key="frame" x="0.0" y="38" width="414" height="168"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="150"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Z1m-z6-wDI" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="C15-22-5ZV"/>
+                            <constraint firstItem="Z1m-z6-wDI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="18" id="E5Q-IP-2BF"/>
+                            <constraint firstItem="spi-2z-azT" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="60" id="KPU-dw-HGf"/>
+                            <constraint firstItem="Z1m-z6-wDI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QQI-Oo-JZN"/>
+                            <constraint firstItem="spi-2z-azT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="R6y-SE-V2l"/>
+                            <constraint firstItem="spi-2z-azT" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="brU-yC-fpb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hed-iC-bsI" secondAttribute="bottom" constant="70.5" id="i8a-bR-w0h"/>
+                            <constraint firstItem="hed-iC-bsI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="o6B-d3-6lI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.5234375" y="132.65007320644216"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="JW Icon" width="1500" height="1500"/>
+    </resources>
+</document>
